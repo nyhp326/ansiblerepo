@@ -1,0 +1,9 @@
+--- 
+- 
+  hosts: all
+  tasks: 
+    - 
+      copy: 
+        content: "nameserver 192.168.0.2\n"
+        dest: /tmp/resolv.conf
+      name: "Content Update"
